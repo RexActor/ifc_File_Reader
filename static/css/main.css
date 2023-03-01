@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  color: #333;
+  font-family: Verdana;
+  font-size: 20px;
+  background-color: rgb(201, 76, 76);
+}
+.styled {
+  background-color: #92a8d1;
+  font-family: Verdana;
+  font-size: 20px;
+}
+table {
+  border: 1px, solid;
+  color: black;
+  width: 56%;
+  grid-row: auto;
+  vertical-align: top;
+  background-color: gray;
+}
+.secondTable {
+  width: 100%;
+}
+
+td {
+  text-align: right;
+  width: 50%;
+  font-size: 14px;
+  border: 1px solid;
+  background-color: bisque;
+}
+.mainObject {
+  vertical-align: middle;
+  text-align: center;
+}
+.categoryName {
+  font-weight: bold;
+  color: black;
+
+  max-width: 15%;
+  text-align: center;
+}
+.RebarStart {
+  background-color: rgb(43, 39, 51);
+  color: wheat;
+  max-width: 20%;
+  font-size: xx-large;
+  vertical-align: middle;
+  text-align: center;
+}
+.beamHeader {
+  background-color: black;
+  color: wheat;
+  font-size: xx-large;
+  vertical-align: middle;
+  text-align: center;
+}
+.valueTable {
+  width: 100%;
+}
+.ValueCategory {
+  width: 50%;
+  background-color: cadetblue;
+  font-weight: bolder;
+}
+.ifcvalues {
+  text-align: center;
+}

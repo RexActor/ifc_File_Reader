@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="all"
+    href="{{ url_for('static',filename='css/main.css')}}"
+  /></head>
+</html>
+<table border="1" class="mainObject">
+  {% for item in result%}
+  <tr><td colspan="2" class="beamHeader" >Beam {{item}}</td></tr>  
+  
+        {% for rebar in result[item] %}
+        <tr>
+            <td class="RebarStart">{{rebar}}</td>
+            {% for value in result[item][rebar]%}
+             
+            <td> {% for singleItem in result[item][rebar][value]%} 
+              <table class="secondTable">
+                
+                  <tr><td class="categoryName">{{singleItem}}</td>
+                  <td>
+                   
+                    <table class="valueTable">
+ {% for singleItemValue in result[item][rebar][value][singleItem]%}
+ <tr>
+  <td class="ValueCategory">{{singleItemValue}}</td>
+  <td class="ifcvalues">
+    
+    {{result[item][rebar][value][singleItem][singleItemValue]}}
+  
+      
+  </td>
+ </tr>
+   {% endfor %}
+                    </table>
+                    
+                  </td>
+                </tr>
+                
+                </table>
+                {% endfor %}
+                {% endfor %}
+              </td>
+        </tr>
+        {% endfor %}
+    {% endfor %}
+  </tr>
+</table>
